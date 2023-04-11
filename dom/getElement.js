@@ -29,15 +29,27 @@
 //   false
 // );
 
-
 //getElementsByName
+// const e = document.getElementById("button");
+// e.addEventListener(
+//   "click",
+//   () => {
+//     const elements = document.getElementsByName("result");
+//     // テキストに入力された内容を受け取るため、valueが必要
+//     console.log(elements[0].value);
+//   },
+//   false
+// );
+
+// getElementsByClassName
 const e = document.getElementById("button");
 e.addEventListener(
   "click",
   () => {
-    const elements = document.getElementsByName("result");
-    // テキストに入力された内容を受け取るため、valueが必要
-    console.log(elements[0].value);
+    const elements = document.getElementsByClassName("foo");
+    for (let i = 0; i < elements.length; i++) {
+      console.log(elements[i].innerText);
+    }
   },
   false
 );
