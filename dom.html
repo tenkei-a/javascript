@@ -1,15 +1,68 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dom</title>
-</head>
-<body>
-    <!-- idは重複させない -->
-    <p id="result">pタグの文字列です</p>
-    <input id="button" type="button" value="Get!">
-    <script src="./dom/getElement.js"></script>
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>dom</title>
+    </head>
+
+    <body>
+        <!-- getElementById -->
+        <!-- idは重複させない -->
+        <!-- <p id="result">pタグの文字列です</p> -->
+        <!-- <input id="button" type="button" value="Get!"> -->
+
+        <!-- getElementsByTagName -->
+        <!-- <div>element1(div)</div> -->
+        <!-- <p>element2(p)</p> -->
+        <!-- <div>element3(div)</div> -->
+        <!-- <span>element4(span)</span> -->
+        <!-- <div>element5(div)</div> -->
+        <!-- <input id="button" type="button" value="Get!"> -->
+
+
+        <!-- getElementsByName -->
+        <!-- <input name="result" type="text"> -->
+        <!-- <input id="button" type="button" value="Get!"> -->
+
+
+        <!-- getElementsByClassName -->
+        <!-- <ul> -->
+        <!-- <li class="foo">element1</li> -->
+        <!-- <li class="bar">element2</li> -->
+        <!-- <li class="foo">element3</li> -->
+        <!-- <li>element4</li> -->
+        <!-- <li class="bar">element5</li> -->
+        <!-- </ul> -->
+        <!-- <input id="button" type="button" value="Get!"> -->
+
+
+        <!-- createElement,createTextNode,appendChild -->
+        <!-- <ul id="list"> -->
+        <!-- </ul> -->
+        <!-- <input id="button" type="button" value="Add!"> -->
+
+
+        <!-- setAttribute,replaceChil -->
+        <!-- <ul> -->
+        <!-- <li id="oldList">old element</li> -->
+        <!-- </ul> -->
+        <!-- <input id="button" type="button" value="Replace!"> -->
+
+        <!-- removeChild -->
+        <ul id="list">
+            <li>element1</li>
+            <li>element2</li>
+            <li>element3</li>
+            <li>element4</li>
+            <li>element5</li>
+        </ul>
+        <input id="button" type="button" value="Remove!">
+
+        <!-- <script src="./dom/getElement.js"></script> -->
+        <script src="./dom/node.js"></script>
+    </body>
+
 </html>
