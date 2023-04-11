@@ -9,6 +9,18 @@
 
 // onload
 // ロード時の処理
-window.onload = () => {
-  console.log("load event");
-};
+// window.onload = () => {
+//   console.log("load event");
+// };
+
+// addEventListener
+const e = document.getElementById("button");
+e.addEventListener(
+    // イベントの種類
+  "click",
+  () => {
+    // イベントハンドラ
+    console.log("click");
+  },
+  false
+);
